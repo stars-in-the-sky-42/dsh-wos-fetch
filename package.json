@@ -1,0 +1,70 @@
+{
+  "name": "@stars-in-the-sky-42/dsh-wos-fetch",
+  "version": "1.0.2",
+  "description": "Web of Science 检索插件：用 DSH 凭据库中的 WoS cookie 直连检索，返回结构化文献记录，并支持在对话中维护课题组检索习惯。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "wos.js",
+    "cookie-store.js",
+    "settings-route.js",
+    "settings-store.js",
+    "paths.js",
+    "credentials.js",
+    "habits.js",
+    "default-habits.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/*.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "web-of-science",
+    "literature"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js && node --check wos.js",
+    "selftest": "node selftest.mjs",
+    "test:client": "node test-client.mjs",
+    "verify:package": "node scripts/verify-package.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stars-in-the-sky-42/dsh-wos-fetch.git"
+  },
+  "homepage": "https://github.com/stars-in-the-sky-42/dsh-wos-fetch",
+  "bugs": {
+    "url": "https://github.com/stars-in-the-sky-42/dsh-wos-fetch/issues"
+  }
+}

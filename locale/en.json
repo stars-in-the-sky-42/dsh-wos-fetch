@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Literature Search (Web of Science)",
+    "description": "Search Web of Science directly with a cookie stored in the DSH credential store, and keep lab-specific search habits editable from chat."
+  }
+}

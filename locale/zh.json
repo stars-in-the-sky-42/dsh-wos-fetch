@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "文献检索（Web of Science）",
+    "description": "用 DSH 凭据库中的 WoS cookie 直连检索，返回结构化文献记录，并支持在对话中维护检索习惯。"
+  }
+}

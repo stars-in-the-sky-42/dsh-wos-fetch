@@ -1,0 +1,8 @@
+# dsh bundle patch：把本插件插入 profile 的层栈。
+#
+# 这里只放非敏感默认值。cookie 由“设置 → 文献检索（WoS）”写入 DSH 凭据库，
+# 不写进本文件；未配置凭据时，工具会回退到 $DSH_HOME/storages/wos-fetch/cookie.txt。
+- insert:
+  - id: wos-fetch
+    name: '@stars-in-the-sky-42/dsh-wos-fetch'
+    config: {}
