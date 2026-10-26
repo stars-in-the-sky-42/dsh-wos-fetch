@@ -28,6 +28,7 @@
 
 侧栏 **插件 → 添加插件**，输入下面任意一种：
 
+开发者注：npm包暂未发布，请先尝试后两种方案
 ```
 @stars-in-the-sky-42/dsh-wos-fetch
 ```
@@ -43,6 +44,7 @@ D:\path\to\dsh-wos-fetch
 ### 2. 用命令行安装
 
 ```bash
+# 开发者注：npm包暂未发布，请先尝试后两种方案
 dsh plugin --profile desktop add @stars-in-the-sky-42/dsh-wos-fetch
 # 或
 dsh plugin --profile desktop add https://github.com/stars-in-the-sky-42/dsh-wos-fetch
